@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Pribadi</title>
+</head>
+<body>
+    <div>  <!-- div untuk mengelompokkan elemen-elemen HTML -->
+        <h1>Profil Pribadi</h1> 
+    </div>
+    <!-- Bagian untuk gambar dan video -->
+    <div>
+        <table cellspacing="" cellpadding="1"> <!-- Untuk mengatur tata letak dari Foto Profil dan Video Perkenalan -->
+            <tr> <!-- Untuk membuat satu baris yang menampung Foto Profil dan Video Perkenalan -->
+                <td align="center"> <!-- Untuk membuat satu sel atau kolom di dalam baris tabel -->
+                    <h3 style="margin: 0;">Foto Profil</h3> <!-- h3 untuk mengatur ukuran font -->
+                    <img src="Foto Profil.jpg" alt="Foto Profil" width="200" /> <!-- Untuk menampilkan file gambar pada web -->
+                </td>
+                <td align="center">
+                    <h3>Video Perkenalan</h3>  
+                    <video> <!-- Untuk menampilkan file video pada web -->
+                        <source src="profile_video.mp4" type="video/mp4" /> 
+                        Your browser does not support the video tag.
+                    </video>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h2>Tentang Saya</h2> <!-- Subjudul -->
+        <p>Halo! Saya adalah seorang pengembang web antusias dengan passion di bidang teknologi dan desain kreatif.</p>
+    </div>
+
+    <div>     <!-- Bagian keterampilan -->
+        <h2>Keterampilan</h2> <!-- Subjudul  -->
+        <table cellspacing="0" > <!-- Tabel untuk keterampilan -->
+            <tr>
+                <th>Keterampilan</th> 
+                <th>Tingkat</th> 
+            </tr>
+            <tr>
+                <td>HTML/CSS</td> 
+                <td>Mahir</td> 
+            </tr>
+            <tr>
+                <td>JavaScript</td> 
+                <td>Menengah</td> 
+            </tr>
+            <tr>
+                <td>Python</td> 
+                <td>Pemula</td> 
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h2>Hubungi Saya</h2> <!-- Subjudul -->
+        <form action="#" method="post"> <!-- Form untuk mengumpulkan data -->
+            <label for="name">Nama:</label> <!-- Label untuk input nama -->
+            <input type="text" id="name" name="name" required /> <!-- Input untuk nama -->
+            <br>
+            
+            <label for="email">Email:</label> <!-- Label untuk input email -->
+            <input type="email" id="email" name="email" required /> <!-- Input untuk email -->
+            <br>
+
+            <label for="message">Pesan:</label> <!-- Label untuk input pesan -->
+            <br>
+            <textarea id="message" name="message" required></textarea> <!-- Input untuk pesan -->
+            <br>
+
+            <button type="submit">Kirim Pesan</button> <!-- Tombol untuk mengirimkan data -->
+        </form>
+    </div>
+
+    <!-- Footer tautan untuk media sosial -->
+    <div>
+        <p><h2>Media Sosial:</h2></p>
+        <p>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com" target="_blank">GitHub</a> | 
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </p>
+    </div>
+</body>
+</html>
